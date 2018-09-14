@@ -14,6 +14,7 @@ exports.verificaToken = function(req, res, next) {
                 errors: err
             });
         }
+        // Almacena en esta variable, los datos del usuario
         req.usuario = decoded.usuario;
         next();
 
